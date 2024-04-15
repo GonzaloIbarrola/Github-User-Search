@@ -4,10 +4,10 @@
 
 import { useSearchContext } from "../provider/useSearchProvider.js";
 import { formatDate } from "../controllers/functions.js";
+import Links from "./Links/index.js";
 
 export default function UserData() {
-  const { items, data } = useSearchContext();
-  const { icon, title, alt } = items;
+  const { data } = useSearchContext();
 
   return (
     <section className="userDataContainer">
@@ -87,29 +87,7 @@ export default function UserData() {
 
           {/* Location + Links */}
           <section className="flex md:grid md:grid-flow-col md:grid-rows-2 flex-col gap-4 lg:text-[15px] text-[13px] lg:flex-wrap">
-            {items.map((item, i) => (
-              <div className="text-queen-blue dark:text-pure-white" key={i}>
-                {title === "" || title === "null" ? (
-                  <div className="flex gap-[13px] md:gap-4">
-                    <img
-                      src={icon}
-                      alt={alt}
-                      className={`dark:brightness-0 opacity-50 dark:invert dark:opacity-50 h-5`}
-                    />
-                    <span className="opacity-50">Not available</span>
-                  </div>
-                ) : (
-                  <div className="flex gap-[13px] md:gap-4">
-                    <img
-                      src={icon}
-                      alt={alt}
-                      className={`dark:brightness-0 dark:invert h-5`}
-                    />
-                    <span className="">{title}</span>
-                  </div>
-                )}
-              </div>
-            ))}
+            <Links />
           </section>
         </article>
       </section>
