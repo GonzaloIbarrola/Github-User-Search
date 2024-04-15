@@ -1,26 +1,26 @@
 @tailwind base;
-  @layer base {
-    body {
-      @apply bg-ghost-white h-screen w-screen flex justify-center items-center dark:bg-dark-gunmetal
-    }
-    /* main {
+@layer base {
+  body {
+    @apply bg-ghost-white h-screen w-screen flex justify-center items-center dark:bg-dark-gunmetal;
+  }
+  /* main {
       @apply w-[327px] md:w-[573px] lg:w-[730px]
     } */
-    input {
-      @apply md:flex-1 text-queen-blue caret-azure dark:text-pure-white dark:caret-pure-white outline-none text-[13px] lg:text-lg md:text-lg leading-[25px] w-[184px] placeholder:text-queen-blue dark:placeholder:text-pure-white dark:bg-yankees-blue
-    }
-    button {
-      @apply bg-azure hover:bg-blue-jeans font-bold text-pure-white md:text-base text-sm capitalize md:px-6 py-[12.5px] px-[16px] rounded-[10px]
-    }
+  input {
+    @apply md:flex-1 text-queen-blue caret-azure dark:text-pure-white dark:caret-pure-white outline-none text-[13px] lg:text-lg md:text-lg leading-[25px] w-[184px] placeholder:text-queen-blue dark:placeholder:text-pure-white dark:bg-yankees-blue;
   }
+  button {
+    @apply bg-azure hover:bg-blue-jeans font-bold text-pure-white md:text-base text-sm capitalize md:px-6 py-[12.5px] px-[16px] rounded-[10px];
+  }
+}
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .userDataContainer {
-    @apply lg:flex lg:gap-[37px] rounded-[15px] dark:bg-yankees-blue dark:shadow-none shadow-asd bg-white md:p-10 px-6 pt-8 pb-12 lg:p-12  text-slate-gray
+    @apply lg:flex lg:gap-[37px] rounded-[15px] dark:bg-yankees-blue dark:shadow-none shadow-asd bg-white md:p-10 px-6 pt-8 pb-12 lg:p-12  text-slate-gray;
   }
   .searchContainer {
-    @apply bg-white dark:shadow-none dark:bg-yankees-blue shadow-asd rounded-[15px] flex gap-[7px] md:gap-6 lg:gap-6 md:h-[69px] h-[60px] py-[7px] pl-4 md:pl-8 md:pr-[9.5px] pr-[7px] items-center md:justify-between
+    @apply bg-white dark:shadow-none dark:bg-yankees-blue shadow-asd rounded-[15px] flex gap-[7px] md:gap-6 lg:gap-6 md:h-[69px] h-[60px] py-[7px] pl-4 md:pl-8 md:pr-[9.5px] pr-[7px] items-center md:justify-between;
   }
 }
