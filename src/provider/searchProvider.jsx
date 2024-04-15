@@ -18,7 +18,6 @@ function SearchProvider(props) {
   }
 
   function darkModeToggle() {
-    console.log(dark);
     switchDarkMode(!dark);
     setDark(!dark);
   }
@@ -26,7 +25,7 @@ function SearchProvider(props) {
   useEffect(() => {
     switchDarkMode(dark);
     fetchMyGithubProfile();
-  }, [dark]);
+  }, []);
 
   // Search *****************************
   function handleInputChange(event) {
@@ -76,32 +75,8 @@ function SearchProvider(props) {
       });
   }
 
-  const items = [
-    {
-      title: `${data.location}`,
-      icon: LocationIcon,
-      alt: "Location icon",
-    },
-    {
-      title: `${data.blog}`,
-      icon: WebsiteIcon,
-      alt: "Blog icon",
-    },
-    {
-      title: `${data.twitter_username}`,
-      icon: TwitterIcon,
-      alt: "Twitter icon",
-    },
-    {
-      title: `${data.company}`,
-      icon: CompanyIcon,
-      alt: "Company icon",
-    },
-  ];
-
   // *******************
   const values = {
-    items,
     handleSearch,
     darkModeToggle,
     handleInputChange,
