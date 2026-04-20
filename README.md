@@ -37,15 +37,6 @@ Este proyecto está construido con:
 ✔️ **React / API Fetch**  
 ✔️ **GitHub REST API**  
 
----
-
-## 🛠 Instalación
-
-Clona este repositorio:
-
-```bash
-git clone https://github.com/GonzaloIbarrola/Github-User-Search.git
-
 ## portfolio-meta
 ```json
 {
@@ -53,8 +44,8 @@ git clone https://github.com/GonzaloIbarrola/Github-User-Search.git
   "featured": false,
   "slug": "github-user-search",
   "title": "GitHub User Search",
-  "summary": "Buscador de usuarios de GitHub que muestra perfil, bio, ubicación, repositorios y métricas públicas en una interfaz simple y responsive.",
-  "seoDescription": "GitHub User Search es una aplicación web hecha con React y Tailwind CSS que consume la API de GitHub para buscar usuarios y mostrar su información pública, incluyendo avatar, bio, ubicación, repositorios y seguidores.",
+  "summary": "Buscador de perfiles de GitHub que permite consultar usuarios y visualizar su información pública en una interfaz clara y responsive.",
+  "seoDescription": "GitHub User Search es una aplicación construida con React y Tailwind CSS que consume la API pública de GitHub para buscar usuarios y mostrar datos relevantes como avatar, bio, ubicación, repositorios y métricas de actividad.",
   "tags": ["React", "Vite", "Tailwind CSS", "GitHub REST API"],
   "thumbnail": "/images/projects/github-user-search/cover.png",
   "thumbnailAlt": "Vista principal del proyecto GitHub User Search",
